@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* put an image in header  *******/
+.headerimage {
+    height: 99vh;
+    background: url('../images/alex-jiang-dhgRwBZKKss-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    /* position: relative; */
+    /* position: static; */
+}
+
+/********* main heading floated left with changing size *********/
+.mainheading {
+    font-weight: 400;
+    font-size: 5rem;
+    margin-left: 2rem;
+    float: left;
+    padding: 1rem;
+    text-shadow: -10px -10px rgba(178, 65, 50, 0.353);
+
+
+}
+
+.navbar {
+    position: relative;
+}
+
+/* ul tag floated right **********/
+.unorderlist {
+    float: right;
+    padding-top: 6rem;
+
+}
+
+/* li tag styled non and converted into inline-block *********/
+.listitem {
+    display: inline-block;
+    list-style: none;
+    /* text-decoration: none; */
+    margin-right: 10rem;
+    font-size: 3rem;
+    /* color: rgb(11, 22, 33); */
+}
+
+/* the whole nav tag is cleared by pesodo class ::after ******* */
+.navbar::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.a-item {
+    color: rgb(99, 64, 44);
+    text-decoration: none;
+    /* border-bottom: 2px rgb(99, 64, 44); */
+
+}
+
+.listitem .a-item:hover {
+    border-bottom: 2px rgb(99, 64, 44);
+}
+
+.sec1 {
+    /* border: 5px solid black; */
+    background-color: #b4b8bcb4;
+    padding: 2rem 5rem;
+    position: absolute;
+    top: 40%;
+    transform: translate(-50% -50%);
+    margin: 2rem;
+
+
+}
+
+.heading1 {
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.selection {
+    /* font-size: 200; */
+    display: inline-block;
+    margin: 1rem 0rem auto;
+    padding: 0.3rem 1rem;
+}
+
+.opt {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 1rem auto;
+}
+
+.para1 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: justify;
+
+}
+
+/* ***************** Sindh Section begins ************ */
+.sindhsection {
+    height: 95vh;
+    background-color: #b4b8bcb4;
+    padding: 5rem 9rem;
+    /* margin: 5rem auto; */
+
+}
+
+.row1 {
+    height: 20rem;
+    /* border: 2px solid red; */
+    /* margin-bottom: 2rem; */
+}
+
+.row1 .imgbox {
+    float: left;
+    width:50%;
+    height:100%;
+    /* border:2px solid green; */
+}
+
+.row1 .imgbox img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    display: cover;
+    float: right;
+}
+
+.sindcontainer::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.row1 .text{
+    float:right;
+    width:50%;
+    padding: 2rem;
+    text-align: justify;
+    font-weight: 500;
+    font-size: 1.5rem;
+    display: cover;
+}
+
+.sindpics {
+    margin-top: 2rem;
+    height: 20rem;
+    /* border:2px solid green; */
+    float:left;
+    
+}
+
+.smallpics{
+    float:right;
+
+}
